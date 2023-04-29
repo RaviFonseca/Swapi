@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/pro
+    http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <!--    <changeSet id="excluir-tabela-PERSON_FILM_3" author="ravi">-->
+    <!--        <dropTable tableName="PERSON_FILM" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-PERSON_STARSHIP_3" author="ravi">-->
+    <!--        <dropTable tableName="PERSON_STARSHIP" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-PERSON_VEHICLE_3" author="ravi">-->
+    <!--        <dropTable tableName="PERSON_VEHICLE" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-FILM_STARSHIP_3" author="ravi">-->
+    <!--        <dropTable tableName="FILM_STARSHIP" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-FILM_PLANET_3" author="ravi">-->
+    <!--        <dropTable tableName="FILM_PLANET" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-SPECIES_PLANET_3" author="ravi">-->
+    <!--        <dropTable tableName="SPECIES_PLANET" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-FILM_SPECIES_3" author="ravi">-->
+    <!--        <dropTable tableName="FILM_SPECIES" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-FILM_VEHICLE_3" author="ravi">-->
+    <!--        <dropTable tableName="FILM_VEHICLE" />-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="excluir-tabela-PERSON_1" author="ravi">-->
+    <!--        <dropTable tableName="PERSON" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-PLANET_1" author="ravi">-->
+    <!--        <dropTable tableName="PLANET" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-FILM_1" author="ravi">-->
+    <!--        <dropTable tableName="FILM" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-SPECIES_1" author="ravi">-->
+    <!--        <dropTable tableName="SPECIES" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-VEHICLE_1" author="ravi">-->
+    <!--        <dropTable tableName="VEHICLE" />-->
+    <!--    </changeSet>-->
+    <!--    <changeSet id="excluir-tabela-STARSHIP_1" author="ravi">-->
+    <!--        <dropTable tableName="STARSHIP" />-->
+    <!--    </changeSet>-->
+
+    <!--   <changeSet id="excluir-tabela-PERSON_FILM_3" author="ravi">-->
+    <!--      <dropTable tableName="PERSON_FILM" />-->
+    <!--   </changeSet>-->
+    <!--   <changeSet id="excluir-tabela-PERSON_STARSHIP_3" author="ravi">-->
+    <!--      <dropTable tableName="PERSON_STARSHIP" />-->
+    <!--   </changeSet>-->
+    <!--   <changeSet id="excluir-tabela-PERSON_VEHICLE_3" author="ravi">-->
+    <!--      <dropTable tableName="PERSON_VEHICLE" />-->
+    <!--   </changeSet>-->
+    <!--   <changeSet id="excluir-tabela-FILM_STARSHIP_3" author="ravi">-->
+    <!--      <dropTable tableName="FILM_STARSHIP" />-->
+    <!--   </changeSet>-->
+    <!--   <changeSet id="excluir-tabela-FILM_PLANET_3" author="ravi">-->
+    <!--      <dropTable tableName="FILM_PLANET" />-->
+    <!--   </changeSet>-->
+    <!--   <changeSet id="excluir-tabela-SPECIES_PLANET_3" author="ravi">-->
+    <!--      <dropTable tableName="SPECIES_PLANET" />-->
+    <!--   </changeSet>-->
+    <!--   <changeSet id="excluir-tabela-FILM_SPECIES_3" author="ravi">-->
+    <!--      <dropTable tableName="FILM_SPECIES" />-->
+    <!--   </changeSet>-->
+    <!--   <changeSet id="excluir-tabela-FILM_VEHICLE_3" author="ravi">-->
+    <!--      <dropTable tableName="FILM_VEHICLE" />-->
+    <!--   </changeSet>-->
+
+
+    <!--    <changeSet id="create_table_14" author="ravi" >-->
+    <!--        <createTable tableName="PERSON">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="name" type="VARCHAR(128)"/>-->
+    <!--            <column name="height" type="FLOAT"/>-->
+    <!--            <column name="mass" type="FLOAT"/>-->
+    <!--            <column name="hair_color" type="VARCHAR(128)"/>-->
+    <!--            <column name="skin_color" type="VARCHAR(128)"/>-->
+    <!--            <column name="eye_color" type="VARCHAR(128)"/>-->
+    <!--            <column name="birth_year" type="VARCHAR(128)"/>-->
+    <!--            <column name="gender" type="VARCHAR(128)"/>-->
+    <!--            <column name="created_at" type="timestamp"/>-->
+    <!--            <column name="updated_at" type="timestamp"/>-->
+    <!--            <column name="homeworld_id" type="UUID"/>-->
+    <!--            <column name="species_id" type="UUID"/>-->
+
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_15" author="ravi" >-->
+    <!--        <createTable tableName="PLANET">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="name" type="VARCHAR(128)"/>-->
+    <!--            <column name="rotation_period" type="INTEGER"/>-->
+    <!--            <column name="orbital_period" type="INTEGER"/>-->
+    <!--            <column name="diameter" type="FLOAT"/>-->
+    <!--            <column name="climate" type="VARCHAR(128)"/>-->
+    <!--            <column name="gravity" type="VARCHAR(128)"/>-->
+    <!--            <column name="terrain" type="VARCHAR(128)"/>-->
+    <!--            <column name="surface_water" type="BOOLEAN"/>-->
+    <!--            <column name="population" type="INTEGER"/>-->
+    <!--            <column name="created_at" type="timestamp"/>-->
+    <!--            <column name="updated_at" type="timestamp"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_16" author="ravi" >-->
+    <!--        <createTable tableName="FILM">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="episodeId" type="INTEGER"/>-->
+    <!--            <column name="title" type="VARCHAR(128)"/>-->
+    <!--            <column name="director" type="VARCHAR(128)"/>-->
+    <!--            <column name="producer" type="VARCHAR(128)"/>-->
+    <!--            <column name="release_date" type="DATE"/>-->
+    <!--            <column name="created_at" type="timestamp"/>-->
+    <!--            <column name="updated_at" type="timestamp"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_17" author="ravi" >-->
+    <!--        <createTable tableName="SPECIES">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="name" type="VARCHAR(128)"/>-->
+    <!--            <column name="classification" type="VARCHAR(128)"/>-->
+    <!--            <column name="designation" type="VARCHAR(128)"/>-->
+    <!--            <column name="average_height" type="FLOAT"/>-->
+    <!--            <column name="skin_colors" type="VARCHAR(255)"/>-->
+    <!--            <column name="hair_colors" type="VARCHAR(255)"/>-->
+    <!--            <column name="eye_colors" type="VARCHAR(255)"/>-->
+    <!--            <column name="average_lifespan" type="FLOAT"/>-->
+    <!--            <column name="language" type="VARCHAR(128)"/>-->
+    <!--            <column name="created_at" type="timestamp"/>-->
+    <!--            <column name="updated_at" type="timestamp"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_18" author="ravi" >-->
+    <!--        <createTable tableName="VEHICLE">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="name" type="VARCHAR(128)"/>-->
+    <!--            <column name="model" type="VARCHAR(128)"/>-->
+    <!--            <column name="manufacturer" type="VARCHAR(128)"/>-->
+    <!--            <column name="cost_in_credits" type="FLOAT"/>-->
+    <!--            <column name="length" type="FLOAT"/>-->
+    <!--            <column name="max_atmosphering_speed" type="INTEGER"/>-->
+    <!--            <column name="crew" type="INTEGER"/>-->
+    <!--            <column name="passengers" type="INTEGER"/>-->
+    <!--            <column name="cargo_capacity" type="INTEGER"/>-->
+    <!--            <column name="consumables" type="INTEGER"/>-->
+    <!--            <column name="vehicle_class" type="VARCHAR(128)"/>-->
+    <!--            <column name="created_at" type="timestamp"/>-->
+    <!--            <column name="updated_at" type="timestamp"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_19" author="ravi" >-->
+    <!--        <createTable tableName="STARSHIP">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="name" type="VARCHAR(128)"/>-->
+    <!--            <column name="model" type="VARCHAR(128)"/>-->
+    <!--            <column name="manufacturer" type="VARCHAR(128)"/>-->
+    <!--            <column name="cost_in_credits" type="FLOAT"/>-->
+    <!--            <column name="length" type="FLOAT"/>-->
+    <!--            <column name="max_atmosphering_speed" type="INTEGER"/>-->
+    <!--            <column name="passengers" type="INTEGER"/>-->
+    <!--            <column name="cargo_capacity" type="INTEGER"/>-->
+    <!--            <column name="consumables" type="INTEGER"/>-->
+    <!--            <column name="hyperdrive_rating" type="FLOAT"/>-->
+    <!--            <column name="MGLT" type="FLOAT"/>-->
+    <!--            <column name="starship_class" type="VARCHAR(128)"/>-->
+    <!--            <column name="created_at" type="timestamp"/>-->
+    <!--            <column name="updated_at" type="timestamp"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+
+    <!--    <changeSet id="create_table_intm_26" author="ravi" >-->
+    <!--        <createTable tableName="PERSON_FILM">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="person_id" type="UUID"/>-->
+    <!--            <column name="film_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_intm_27" author="ravi" >-->
+    <!--        <createTable tableName="PERSON_STARSHIP">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="person_id" type="UUID"/>-->
+    <!--            <column name="starship_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_intm_28" author="ravi" >-->
+    <!--        <createTable tableName="PERSON_VEHICLE">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="person_id" type="UUID"/>-->
+    <!--            <column name="vehicle_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_intm_29" author="ravi" >-->
+    <!--        <createTable tableName="FILM_STARSHIP">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="film_id" type="UUID"/>-->
+    <!--            <column name="starship_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_intm_30" author="ravi" >-->
+    <!--        <createTable tableName="FILM_PLANET">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="film_id" type="UUID"/>-->
+    <!--            <column name="planet_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_intm_31" author="ravi" >-->
+    <!--        <createTable tableName="SPECIES_PLANET">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="species_id" type="UUID"/>-->
+    <!--            <column name="planet_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_intm_32" author="ravi" >-->
+    <!--        <createTable tableName="FILM_SPECIES">-->
+    <!--            <column name="id" type="UUID"/>-->
+    <!--            <column name="film_id" type="UUID"/>-->
+    <!--            <column name="species_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="create_table_intm_33" author="ravi" >-->
+    <!--        <createTable tableName="FILM_VEHICLE">-->
+    <!--         <column name="id" type="UUID"/>-->
+    <!--         <column name="film_id" type="UUID"/>-->
+    <!--         <column name="vehicle_id" type="UUID"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
+
+
+
+    <!--    <changeSet id="add_pks_4" author="ravi" >-->
+    <!--        <addPrimaryKey tableName="PERSON" columnNames="ID" constraintName="pk_person"/>-->
+    <!--        <addPrimaryKey tableName="PLANET" columnNames="ID" constraintName="pk_planet"/>-->
+    <!--        <addPrimaryKey tableName="FILM" columnNames="ID" constraintName="pk_film"/>-->
+    <!--        <addPrimaryKey tableName="SPECIES" columnNames="ID" constraintName="pk_species"/>-->
+    <!--        <addPrimaryKey tableName="VEHICLE" columnNames="ID" constraintName="pk_vehicle"/>-->
+    <!--        <addPrimaryKey tableName="STARSHIP" columnNames="ID" constraintName="pk_starship"/>-->
+
+    <!--        <addPrimaryKey tableName="PERSON_FILM" columnNames="id" constraintName="pk_person_film"/>-->
+    <!--        <addPrimaryKey tableName="PERSON_STARSHIP" columnNames="id" constraintName="pk_person_starship"/>-->
+    <!--        <addPrimaryKey tableName="PERSON_VEHICLE" columnNames="id" constraintName="pk_person_vehicle"/>-->
+    <!--        <addPrimaryKey tableName="FILM_STARSHIP" columnNames="id" constraintName="pk_film_starship"/>-->
+    <!--        <addPrimaryKey tableName="FILM_PLANET" columnNames="id" constraintName="pk_film_planet"/>-->
+    <!--        <addPrimaryKey tableName="SPECIES_PLANET" columnNames="id" constraintName="pk_species_planet"/>-->
+    <!--        <addPrimaryKey tableName="FILM_SPECIES" columnNames="id" constraintName="pk_film_species"/>-->
+    <!--        <addPrimaryKey tableName="FILM_VEHICLE" columnNames="id" constraintName="pk_film_vehicle"/>-->
+
+    <!--    </changeSet>-->
+
+
+
+    <!--    <changeSet id="change_add_constraints_person_8" author="ravi" >-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="id"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="name"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="height"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="mass"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="hair_color"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="skin_color"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="eye_color"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="birth_year"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="gender"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="created_at"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="homeworld_id"/>-->
+    <!--        <addNotNullConstraint tableName="PERSON" columnName="species_id"/>-->
+
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="change_add_constraints_planet_8" author="ravi" >-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="id"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="name"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="rotation_period"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="orbital_period"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="diameter"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="climate"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="gravity"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="terrain"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="surface_water"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="population"/>-->
+    <!--        <addNotNullConstraint tableName="PLANET" columnName="created_at"/>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="change_add_constraints_film_8" author="ravi" >-->
+    <!--        <addNotNullConstraint tableName="FILM" columnName="id"/>-->
+    <!--        <addNotNullConstraint tableName="FILM" columnName="episodeId"/>-->
+    <!--        <addNotNullConstraint tableName="FILM" columnName="title"/>-->
+    <!--        <addNotNullConstraint tableName="FILM" columnName="director"/>-->
+    <!--        <addNotNullConstraint tableName="FILM" columnName="producer"/>-->
+    <!--        <addNotNullConstraint tableName="FILM" columnName="release_date"/>-->
+    <!--        <addNotNullConstraint tableName="FILM" columnName="created_at"/>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="change_add_constraints_species_8" author="ravi" >-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="id"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="name"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="classification"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="designation"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="average_height"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="skin_colors"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="hair_colors"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="eye_colors"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="average_lifespan"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="language"/>-->
+    <!--        <addNotNullConstraint tableName="SPECIES" columnName="created_at"/>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="change_add_constraints_vehicle_8" author="ravi" >-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="id"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="name"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="model"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="manufacturer"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="cost_in_credits"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="length"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="max_atmosphering_speed"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="crew"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="passengers"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="cargo_capacity"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="consumables"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="vehicle_class"/>-->
+    <!--        <addNotNullConstraint tableName="VEHICLE" columnName="created_at"/>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="change_add_constraints_starship_8" author="ravi" >-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="id"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="name"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="model"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="manufacturer"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="cost_in_credits"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="length"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="max_atmosphering_speed"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="passengers"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="cargo_capacity"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="consumables"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="hyperdrive_rating"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="MGLT"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="starship_class"/>-->
+    <!--        <addNotNullConstraint tableName="STARSHIP" columnName="created_at"/>-->
+    <!--    </changeSet>-->
+
+
+
+    <!--    <changeSet id="add_fks_4" author="ravi" >-->
+    <!--        <addForeignKeyConstraint baseTableName="PERSON" baseColumnNames="homeworld_id"-->
+    <!--                                 constraintName="fk_person_planet_planet" referencedTableName="PLANET"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="PERSON" baseColumnNames="species_id"-->
+    <!--                                 constraintName="fk_person_species_species" referencedTableName="SPECIES"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="PERSON_FILM" baseColumnNames="person_id"-->
+    <!--                                 constraintName="fk_person_film_person" referencedTableName="PERSON"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="PERSON_FILM" baseColumnNames="film_id"-->
+    <!--                                 constraintName="fk_person_film_film" referencedTableName="FILM"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="PERSON_STARSHIP" baseColumnNames="person_id"-->
+    <!--                                 constraintName="fk_person_starship_person" referencedTableName="PERSON"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="PERSON_STARSHIP" baseColumnNames="starship_id"-->
+    <!--                                 constraintName="fk_person_starship_starship" referencedTableName="STARSHIP"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="PERSON_VEHICLE" baseColumnNames="person_id"-->
+    <!--                                 constraintName="fk_person_vehicle_person" referencedTableName="PERSON"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="PERSON_VEHICLE" baseColumnNames="vehicle_id"-->
+    <!--                                 constraintName="fk_person_vehicle_vehicle" referencedTableName="VEHICLE"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="FILM_STARSHIP" baseColumnNames="film_id"-->
+    <!--                                 constraintName="fk_film_starship_film" referencedTableName="FILM"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="FILM_STARSHIP" baseColumnNames="starship_id"-->
+    <!--                                 constraintName="fk_person_film_film" referencedTableName="STARSHIP"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="FILM_PLANET" baseColumnNames="film_id"-->
+    <!--                                 constraintName="fk_film_planet_film" referencedTableName="FILM"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="FILM_PLANET" baseColumnNames="planet_id"-->
+    <!--                                 constraintName="fk_film_planet_planet" referencedTableName="PLANET"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="SPECIES_PLANET" baseColumnNames="species_id"-->
+    <!--                                 constraintName="fk_species_planet_species" referencedTableName="SPECIES"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="SPECIES_PLANET" baseColumnNames="planet_id"-->
+    <!--                                 constraintName="fk_species_planet_planet" referencedTableName="PLANET"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="FILM_SPECIES" baseColumnNames="film_id"-->
+    <!--                                 constraintName="fk_film_species_film" referencedTableName="FILM"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="FILM_SPECIES" baseColumnNames="species_id"-->
+    <!--                                 constraintName="fk_film_species_species" referencedTableName="SPECIES"-->
+    <!--                                 referencedColumnNames="id"/>-->
+
+    <!--        <addForeignKeyConstraint baseTableName="FILM_VEHICLE" baseColumnNames="film_id"-->
+    <!--                                 constraintName="fk_film_vehicle_film" referencedTableName="FILM"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--        <addForeignKeyConstraint baseTableName="FILM_VEHICLE" baseColumnNames="vehicle_id"-->
+    <!--                                 constraintName="fk_film_vehicle_vehicle" referencedTableName="VEHICLE"-->
+    <!--                                 referencedColumnNames="id"/>-->
+    <!--    </changeSet>-->
+
+    <!--    <changeSet id="add_single_id_midTables_1" author="ravi">-->
+    <!--        <addColumn tableName="PERSON_FILM">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--        <addColumn tableName="PERSON_STARSHIP">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--        <addColumn tableName="PERSON_VEHICLE">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--        <addColumn tableName="FILM_STARSHIP">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--        <addColumn tableName="FILM_PLANET">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--        <addColumn tableName="SPECIES_PLANET">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--        <addColumn tableName="FILM_SPECIES">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--        <addColumn tableName="FILM_VEHICLE">-->
+    <!--            <column name="id" type="INTEGER"></column>-->
+    <!--        </addColumn>-->
+
+    <!--    </changeSet>-->
+    <!--    <changeSet author="ravi" id="remover_fk_constraint">-->
+    <!--        <dropForeignKeyConstraint baseTableName="film_planet" constraintName="fkb62ce0llosktullnekm63u4jk"/>-->
+    <!--    </changeSet>-->
+
+
+</databaseChangeLog>
