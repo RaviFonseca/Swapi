@@ -521,82 +521,82 @@
     <!-- **********************************   CREATE TABLES ************************************** -->
 
 
-    <!--    <changeSet id="create_user_table" author="ravi" >-->
-    <!--        <createTable tableName="user">-->
-    <!--            <column name="id" type="BIGINT" autoIncrement="true"/>-->
-    <!--            <column name="username" type="VARCHAR(128)"/>-->
-    <!--            <column name="password" type="VARCHAR(128)"/>-->
-    <!--        </createTable>-->
-    <!--    </changeSet>-->
+<!--        <changeSet id="create_user_table_1" author="ravi" >-->
+<!--            <createTable tableName="user">-->
+<!--                <column name="id" type="BIGINT" autoIncrement="true"/>-->
+<!--                <column name="username" type="VARCHAR(128)"/>-->
+<!--                <column name="password" type="VARCHAR(128)"/>-->
+<!--            </createTable>-->
+<!--        </changeSet>-->
 
-    <!--    <changeSet id="create_role_table" author="ravi" >-->
-    <!--        <createTable tableName="role">-->
-    <!--            <column name="id" type="BIGINT" autoIncrement="true"/>-->
-    <!--            <column name="name" type="VARCHAR(128)"/>-->
-    <!--        </createTable>-->
-    <!--    </changeSet>-->
+<!--        <changeSet id="create_role_table_1" author="ravi" >-->
+<!--            <createTable tableName="role">-->
+<!--                <column name="id" type="BIGINT" autoIncrement="true"/>-->
+<!--                <column name="name" type="VARCHAR(128)"/>-->
+<!--            </createTable>-->
+<!--        </changeSet>-->
 
-    <!--    <changeSet id="create_permission_table" author="ravi" >-->
-    <!--        <createTable tableName="permission">-->
-    <!--            <column name="id" type="BIGINT" autoIncrement="true"/>-->
-    <!--            <column name="name" type="VARCHAR(128)"/>-->
-    <!--            <column name="action_id" type="BIGINT"/>-->
-    <!--            <column name="object_id" type="BIGINT"/>-->
-    <!--        </createTable>-->
-    <!--    </changeSet>-->
+<!--        <changeSet id="create_permission_table_1" author="ravi" >-->
+<!--            <createTable tableName="permission">-->
+<!--                <column name="id" type="BIGINT" autoIncrement="true"/>-->
+<!--                <column name="name" type="VARCHAR(128)"/>-->
+<!--                <column name="action_id" type="BIGINT"/>-->
+<!--                <column name="object_id" type="BIGINT"/>-->
+<!--            </createTable>-->
+<!--        </changeSet>-->
 
-    <!--    <changeSet id="create_action_table" author="ravi" >-->
-    <!--        <createTable tableName="action">-->
-    <!--            <column name="id" type="BIGINT" autoIncrement="true"/>-->
-    <!--            <column name="name" type="VARCHAR(128)"/>-->
-    <!--        </createTable>-->
-    <!--    </changeSet>-->
+<!--        <changeSet id="create_action_table_1" author="ravi" >-->
+<!--            <createTable tableName="action">-->
+<!--                <column name="id" type="BIGINT" autoIncrement="true"/>-->
+<!--                <column name="name" type="VARCHAR(128)"/>-->
+<!--            </createTable>-->
+<!--        </changeSet>-->
 
-    <!--    <changeSet id="create_object_table" author="ravi" >-->
-    <!--        <createTable tableName="object">-->
-    <!--            <column name="id" type="BIGINT" autoIncrement="true"/>-->
-    <!--            <column name="name" type="VARCHAR(128)"/>-->
-    <!--        </createTable>-->
-    <!--    </changeSet>-->
+<!--        <changeSet id="create_object_table_1" author="ravi" >-->
+<!--            <createTable tableName="object">-->
+<!--                <column name="id" type="BIGINT" autoIncrement="true"/>-->
+<!--                <column name="name" type="VARCHAR(128)"/>-->
+<!--            </createTable>-->
+<!--        </changeSet>-->
 
 
     <!-- **********************************   ADD INTM TABLES ************************************** -->
 
 
-    <!--    <changeSet id="create_table_intm_users_roles" author="ravi" >-->
-    <!--        <createTable tableName="users_roles">-->
-    <!--            <column name="id" type="BIGINT" autoIncrement="true"/>-->
-    <!--            <column name="user_id" type="BIGINT"/>-->
-    <!--            <column name="role_id" type="BIGINT"/>-->
-    <!--        </createTable>-->
-    <!--    </changeSet>-->
+<!--        <changeSet id="create_table_intm_users_roles_1" author="ravi" >-->
+<!--            <createTable tableName="users_roles">-->
+<!--                <column name="id" type="BIGINT" autoIncrement="true"/>-->
+<!--                <column name="user_id" type="BIGINT"/>-->
+<!--                <column name="role_id" type="BIGINT"/>-->
+<!--            </createTable>-->
+<!--        </changeSet>-->
 
-    <!--    <changeSet id="create_table_intm_roles_permissions" author="ravi" >-->
-    <!--        <createTable tableName="roles_permissions">-->
-    <!--            <column name="id" type="BIGINT" autoIncrement="true"/>-->
-    <!--            <column name="role_id" type="BIGINT"/>-->
-    <!--            <column name="permission_id" type="BIGINT"/>-->
-    <!--        </createTable>-->
-    <!--    </changeSet>-->
+<!--        <changeSet id="create_table_intm_roles_permissions_1" author="ravi" >-->
+<!--            <createTable tableName="roles_permissions">-->
+<!--                <column name="id" type="BIGINT" autoIncrement="true"/>-->
+<!--                <column name="role_id" type="BIGINT"/>-->
+<!--                <column name="permission_id" type="BIGINT"/>-->
+<!--            </createTable>-->
+<!--        </changeSet>-->
 
     <!-- **********************************   DEFINE PKs  ************************************** -->
 
-    <!--        <changeSet id="add_pks_ss_2" author="ravi" >-->
-    <!--            <addPrimaryKey tableName="user" columnNames="ID" constraintName="pk_user"/>-->
-    <!--            <addPrimaryKey tableName="role" columnNames="ID" constraintName="pk_role"/>-->
-    <!--            <addPrimaryKey tableName="permission" columnNames="ID" constraintName="pk_permission"/>-->
-    <!--            <addPrimaryKey tableName="action" columnNames="ID" constraintName="pk_action"/>-->
-    <!--            <addPrimaryKey tableName="object" columnNames="ID" constraintName="pk_object"/>-->
+<!--            <changeSet id="add_pks_ss_1" author="ravi" >-->
+<!--                <addPrimaryKey tableName="user" columnNames="ID" constraintName="pk_user"/>-->
+<!--                <addPrimaryKey tableName="role" columnNames="ID" constraintName="pk_role"/>-->
+<!--                <addPrimaryKey tableName="permission" columnNames="ID" constraintName="pk_permission"/>-->
+<!--                <addPrimaryKey tableName="action" columnNames="ID" constraintName="pk_action"/>-->
+<!--                <addPrimaryKey tableName="object" columnNames="ID" constraintName="pk_object"/>-->
 
-    <!--            <addPrimaryKey tableName="users_roles" columnNames="id" constraintName="pk_users_roles"/>-->
-    <!--            <addPrimaryKey tableName="roles_permissions" columnNames="id" constraintName="pk_roles_permissions"/>-->
+<!--                <addPrimaryKey tableName="users_roles" columnNames="id" constraintName="pk_users_roles"/>-->
+<!--                <addPrimaryKey tableName="roles_permissions" columnNames="id" constraintName="pk_roles_permissions"/>-->
 
-    <!--        </changeSet>-->
+<!--            </changeSet>-->
 
 
     <!-- **********************************   DEFINE FKs  ************************************** -->
 
-<!--    <changeSet id="add_fks_ss" author="ravi" >-->
+<!--    <changeSet id="add_fks_ss_1" author="ravi" >-->
 
 <!--        <addForeignKeyConstraint baseTableName="users_roles" baseColumnNames="user_id"-->
 <!--                                 constraintName="fk_users_roles_users" referencedTableName="user"-->

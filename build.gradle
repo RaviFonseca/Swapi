@@ -29,6 +29,8 @@ dependencies {
 	//Security Dependency
 	implementation 'org.springframework.boot:spring-boot-starter-security:3.0.6'
 
+	//biblioteca jjwt (JSON Web Token) que fornece a Jwts, que é utilizada para criar, validar e decodificar tokens JWT
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
 
 
 	annotationProcessor 'javax.annotation:javax.annotation-api:1.3.2'
