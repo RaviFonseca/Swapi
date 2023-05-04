@@ -29,7 +29,7 @@ public class Permission {
     public Permission(String name, Action action, Object object) {
         this.name = name;
         this.action = action;
-//        this.object = object;
+        this.object = object;
     }
 
     public Long getId() {

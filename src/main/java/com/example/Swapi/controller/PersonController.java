@@ -4,13 +4,17 @@ package com.example.Swapi.controller;
 import com.example.Swapi.Dtos.PersonFullDTO;
 import com.example.Swapi.Dtos.PersonMapper;
 import com.example.Swapi.Dtos.PersonSimpleDTO;
+import com.example.Swapi.SpringSecurity.AuthService;
+import com.example.Swapi.SpringSecurity.entities.Object;
 import com.example.Swapi.entities.*;
 import com.example.Swapi.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.file.AccessDeniedException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -22,6 +26,8 @@ public class PersonController  {
 
     @Autowired
     private PersonMapper personMapper;
+    @Autowired
+    private AuthService authService;
     @Autowired
     private PersonService personService;
 
@@ -38,15 +44,22 @@ public class PersonController  {
 
 
     @GetMapping
-    public ResponseEntity<List<PersonSimpleDTO>> getAllPeople() {
-        List<Person> people = personService.getAllPeople();
-        if (people.isEmpty()){
-            return ResponseEntity.noContent().build();
-        }
-        List<PersonSimpleDTO> peopleDTOs = people.stream()
-                .map(personMapper::toSimpleDTO)
-                .collect(Collectors.toList());
-        return ResponseEntity.ok(peopleDTOs);
+    public ResponseEntity<List<PersonSimpleDTO>> getAllPeople(Authentication authentication)/* throws AccessDeniedException*/ {
+//        if(authService.hasPermission(authentication, 1,2)){
+            List<Person> people = personService.getAllPeople();
+            if (people.isEmpty()){
+                return ResponseEntity.noContent().build();
+            }
+            List<PersonSimpleDTO> peopleDTOs = people.stream()
+                    .map(personMapper::toSimpleDTO)
+                    .collect(Collectors.toList());
+            return ResponseEntity.ok(peopleDTOs);
+//        }else{
+//            throw new AccessDeniedException("Access denied");
+//        }
+
+
+
     }
 
     @GetMapping("/{id}")

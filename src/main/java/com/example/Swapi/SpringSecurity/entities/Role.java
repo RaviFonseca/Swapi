@@ -14,7 +14,7 @@ public class Role {
     @Column(nullable = false)
     private String name;
     @ManyToMany(mappedBy = "roles")
-    private Collection<User> users;
+    private Set<User> users;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
@@ -30,9 +30,8 @@ public class Role {
     public Role() {
     }
 
-    public Role(String name, Collection<User> users) {
+    public Role(String name) {
         this.name = name;
-        this.users = users;
     }
 
     public Long getId() {
@@ -51,11 +50,11 @@ public class Role {
         this.name = name;
     }
 
-    public Collection<User> getUsers() {
+    public Set<User> getUsers() {
         return users;
     }
 
-    public void setUsers(Collection<User> users) {
+    public void setUsers(Set<User> users) {
         this.users = users;
     }
 
