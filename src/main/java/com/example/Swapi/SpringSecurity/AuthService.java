@@ -41,13 +41,4 @@ public class AuthService implements UserDetailsService {
                 .isPresent();
     }
 
-
-//    public boolean hasPermission(Authentication authentication,  int actionId,int objectId){
-//        User user = (User) authentication.getPrincipal();
-//        return user.getRoles().stream()
-//                .flatMap(role -> role.getPermissions().stream())
-//                .filter(permission -> permission.getActionId().equals(actionId) && permission.getObjectId().equals(objectId))
-//                .findFirst()
-//                .isPresent();
-//    }
 }

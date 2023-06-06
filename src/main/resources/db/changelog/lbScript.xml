@@ -625,6 +625,67 @@
 
 <!--    </changeSet>-->
 
+    <!-- **********************************   CRIAÇÃO DE TABELA DE ARMAZENAMENTO DE TOKENS  ************************************** -->
 
+
+<!--                <changeSet id="excluir-tabela-user_tokens" author="ravi">-->
+<!--                    <dropTable cascadeConstraints="true" tableName="user_tokens" />-->
+<!--                </changeSet>-->
+
+    <!-- **********************************   CRIAÇÃO DE TABELA DE ARMAZENAMENTO DE TOKENS  ************************************** -->
+
+<!--            <changeSet id="create_user_tokens_table_1" author="ravi" >-->
+<!--                <createTable tableName="user_tokens">-->
+<!--                    <column name="id" type="BIGINT" autoIncrement="true">-->
+<!--                        <constraints primaryKey="true" nullable="false"/>-->
+<!--                    </column>-->
+<!--                    <column name="user_id" type="BIGINT">-->
+<!--                        <constraints nullable="false" foreignKeyName="fk_user_tokens_user" referencedTableName="user" referencedColumnNames="id"/>-->
+<!--                    </column>-->
+<!--                    <column name="token" type="VARCHAR(255)">-->
+<!--                        <constraints nullable="false"/>-->
+<!--                    </column>-->
+<!--                    <column name="expiry_date" type="TIMESTAMP">-->
+<!--                        <constraints nullable="false"/>-->
+<!--                    </column>-->
+<!--                    <column name="created_at" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">-->
+<!--                        <constraints nullable="false"/>-->
+<!--                    </column>-->
+<!--&lt;!&ndash;                    <column name="updated_at" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <constraints nullable="false"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </column>&ndash;&gt;-->
+
+<!--                </createTable>-->
+<!--            </changeSet>-->
+
+    <!-- **********************************   CRIAÇÃO DE TABELA DE SESSOES  ************************************** -->
+
+                <changeSet id="create_sessions_table" author="ravi" >
+                    <createTable tableName="SESSIONS">
+                        <column name="id" type="VARCHAR(36)" >
+                            <constraints primaryKey="true" nullable="false"/>
+                        </column>
+                        <column name="session_id" type="VARCHAR(36)">
+                            <constraints nullable="false" />
+                        </column>
+                        <column name="creation_time" type="BIGINT">
+                            <constraints nullable="false"/>
+                        </column>
+                        <column name="last_access_time" type="BIGINT">
+                            <constraints nullable="false"/>
+                        </column>
+                        <column name="max_inactive_interval" type="INT">
+                            <constraints nullable="false"/>
+                        </column>
+                        <column name="expiry_time" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
+                            <constraints nullable="false"/>
+                        </column>
+    <!--                    <column name="updated_at" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">-->
+    <!--                        <constraints nullable="false"/>-->
+    <!--                    </column>-->
+
+                    </createTable>
+                    <addUniqueConstraint tableName="SESSIONS" columnNames="session_id" constraintName="uk_session_id"/>
+                </changeSet>
 
 </databaseChangeLog>
